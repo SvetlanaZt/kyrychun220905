@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {fetchApi} from 'api/api';
+// import {fetchApi} from 'api/api';
 import CurrencyInput from './CurrencyInput';
 import axios from "axios";
 
@@ -18,16 +18,14 @@ export default function Converter(){
         })
     }, []);
   
-    useEffect(() => {
-      if (!!rates) {
-        function init() {
-          handleAmount1Change(1);
-        }
-        init();
-      }
-    }, [rates]);
-  
-  
+    // useEffect(() => {
+    //   if (!!rates) {
+    //     function init() {
+    //       handleAmount1Change(1);
+    //     }
+    //     init();
+    //   }
+    // }, [rates]);
   
     function format(number) {
       return number.toFixed(2);
