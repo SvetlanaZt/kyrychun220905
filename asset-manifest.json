@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kyrychun220905/static/css/main.7acaea2f.css",
+    "main.js": "/kyrychun220905/static/js/main.0878bf25.js",
+    "index.html": "/kyrychun220905/index.html",
+    "main.7acaea2f.css.map": "/kyrychun220905/static/css/main.7acaea2f.css.map",
+    "main.0878bf25.js.map": "/kyrychun220905/static/js/main.0878bf25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.0878bf25.js"
+  ]
+}
