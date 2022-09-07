@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 // import {fetchApi} from 'api/api'
 import axios from "axios";
+import css from './Header.module.css'
+
 
 export default function Header(){
     const [currentExchange, setCurrentExchange] = useState([])
@@ -15,22 +17,21 @@ export default function Header(){
 
 
     return(
-        <header>
-            <div>
-            <a href="*"> 
+        <header className={css.header}>
+            <div className={css.headerContainer}>
+            <a className={css.headerLink} href="*"> 
             {/* <img src='../img/images.png' alt='time'></img> */}
-            <span>Time</span>
+            <span className={css.headerTitle}>Time</span>
             </a>
-                 <nav>
-                    <ul>
-                        <li>Головна</li>
-                        <li>Депозити</li>
-                        <li>Кредити</li>
-                        <li>Контакти</li>
+                 <nav className={css.headerNavigation}>
+                    <ul className={css.headerList}>
+                        <li className={css.headerItem}>Головна</li>
+                        <li className={css.headerItem}>Депозити</li>
+                        <li className={css.headerItem}>Кредити</li>
                     </ul>
                 </nav> 
                <ul>
-              {currentExchange && (<li>{EUR} {USD}</li>
+              {currentExchange && (<li className={css.headerCurrency}>{EUR} {USD}</li>
               )}
           </ul> 
             </div>

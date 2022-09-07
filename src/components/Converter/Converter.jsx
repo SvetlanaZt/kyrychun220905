@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 // import {fetchApi} from 'api/api';
-import CurrencyInput from './CurrencyInput';
+import CurrencyInput from '../CurrencyInput/CurrencyInput';
 import axios from "axios";
+import css from './Converter.module.css'
 
 export default function Converter(){
     const [amount1, setAmount1] = useState(1);
@@ -53,20 +54,24 @@ export default function Converter(){
   
   
     return (
-      <div>
-        <h1>Currency Converter</h1>
+      <div className={css.currencyContainer}>
+        <h1 className={css.currencyTitle}>Currency Converter</h1>
+        <div className={css.currencyWrapperInput}>
         <CurrencyInput
           onAmountChange={handleAmount1Change}
           onCurrencyChange={handleCurrency1Change}
           currencies={Object.keys(rates)}
           amount={amount1}
           currency={currency1} />
+          </div>
+          <div className={css.currencyWrapperInput}>
         <CurrencyInput
           onAmountChange={handleAmount2Change}
           onCurrencyChange={handleCurrency2Change}
           currencies={Object.keys(rates)}
           amount={amount2}
           currency={currency2} />
+          </div>
       </div>
     );
   }

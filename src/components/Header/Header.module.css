@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+.headerContainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.headerLink{
+    text-decoration: none;
+    color: black;
+}
+.headerTitle{
+    font-family: Raleway;
+    margin-right: 93px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.headerNavigation{
+    display: flex;
+    align-items: center;
+}
+.headerList{
+    list-style: none;
+    display: flex;
+}
+.headerItem{
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.headerCurrency{
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    list-style: none;
+}

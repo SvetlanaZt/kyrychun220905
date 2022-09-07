@@ -1,0 +1,23 @@
+.currencyWrapperInput{
+    background-color: rgb(224, 221, 221);
+    width: 201px;
+    padding: 10px 20px;
+}
+.currencyTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+
+    font-family: Raleway;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+}
+.currencyWrapperInput{
+    display: flex;
+    margin: 0 auto;
+}
