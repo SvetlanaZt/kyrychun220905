@@ -13,7 +13,7 @@ export default function Converter(){
     console.log(amount1)
   
     useEffect(() => {
-      axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=j1e3ILhOZJR4zJ9XVwIjk825d9gatOGR')
+      axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=yei6WD8EtACj9FGH1MGU2VzIhys7RPy4')
         .then(response => {
           setRates(response.data.rates);
         })

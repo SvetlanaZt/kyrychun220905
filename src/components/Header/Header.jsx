@@ -8,13 +8,13 @@ export default function Header(){
     const [currentExchange, setCurrentExchange] = useState([])
 
     useEffect(() => {
-        axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=j1e3ILhOZJR4zJ9XVwIjk825d9gatOGR')
+        axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=yei6WD8EtACj9FGH1MGU2VzIhys7RPy4')
           .then(response => setCurrentExchange(response.data.rates))
       }, []);
       const EUR = (currentExchange.EUR * currentExchange.UAH).toFixed(2);
       const USD = (currentExchange.USD * currentExchange.UAH).toFixed(2);
       
-
+console.log(currentExchange)
 
     return(
         <header className={css.header}>
